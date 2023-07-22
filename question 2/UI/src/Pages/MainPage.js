@@ -25,9 +25,9 @@ const MainPage = () => {
 
 
     return (
-        <div className='h-full bg-slate-400'>
+        <div className='h-full bg-rgb(2,0,36)-400'>
             <div className='text-center text-white font-extrabold text-3xl p-3 rounded-md'>
-                <h1> Parth Train Services </h1>
+                <h1> ALL Train Details </h1>
             </div>
 
 
@@ -64,7 +64,7 @@ const MainPage = () => {
 
                         {TrainData.map((data, index) => (
                             <tbody data-index={index} class="align-baseline">
-                                <tr class="group cursor-pointer hover:bg-gray-100">
+                                <tr class="group cursor-pointer hover:bg-blue-100">
 
                                     <td class="text-sm p-3 border-t border-grey-light whitespace-no-wrap" >
                                         {data.trainName}
@@ -83,7 +83,7 @@ const MainPage = () => {
                                     </td>
 
                                     <td class="text-sm p-3 border-t border-grey-light whitespace-no-wrap text-sm group-hover:visible" >
-                                            <button class='bg-red-300 p-3 rounded-lg'> Get Details </button>
+                                            <button class='bg-blue-300 hover:bg-white p-3 rounded-lg'> Get Details </button>
                                     </td>
                                 </tr>
 
